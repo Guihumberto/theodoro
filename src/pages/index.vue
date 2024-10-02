@@ -3,8 +3,8 @@
     <HomeHeader />
     <Idade />
     <Imagens />
-    <DiaHorario />
-    <Confirmar />
+    <DiaHorario v-if="readConvidado.id"  />
+    <Confirmar v-if="readConvidado.id" />
   </div>
 </template>
 
@@ -21,7 +21,7 @@
     },
     computed:{
       readConvidado(){
-        return conviteStore.readConvidado()
+        return conviteStore.readConvidado
       }
     },
     methods:{

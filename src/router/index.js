@@ -17,7 +17,7 @@ const routes = [
       },
       {
         path: '/config',
-        name: 'Home',
+        name: 'Lista',
         component: () => import('@/pages/listaaConvidados.vue'),
       },
       {
