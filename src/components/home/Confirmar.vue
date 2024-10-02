@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <img class="nave" src="../../assets/nave_04.png" />
+    <!-- <img class="nave" src="../../assets/nave_04.png" /> -->
     <img src="../../assets/estrela_suspensa.png" width="100%" />
     <div class="title" v-if="!readConvidado.confirm && !readConvidado.not_go">
         <div class="mb-5 mt-15 text-left w-100">
