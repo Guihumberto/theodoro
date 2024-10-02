@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('@/assets/fonts/Strjmono.ttf') format('truetype'); /* Ajuste o caminho conforme necessário */
+    font-weight: normal;
+    font-style: normal;
+  }
