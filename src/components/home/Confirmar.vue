@@ -4,7 +4,7 @@
     <img src="../../assets/estrela_suspensa.png" width="100%" />
     <div class="title" v-if="!readConvidado.confirm && !readConvidado.not_go">
         <div class="mb-5 mt-15 text-left w-100">
-          <h1 class="line-height">Confirme a sua presença!</h1>
+          <h1 class="line-height title-confirmar">Confirme a sua presença!</h1>
           <v-row class="mt-2 justify-center">
             <v-col cols="12" class=" name_convidado">
               <h3 class="text-h5 line-height name_convidado_h3">{{ readConvidado.name_parents }}</h3>
@@ -362,6 +362,11 @@ const conviteStore = useConviteStore()
   .name_convidado::after {
       width: 10%;
       margin: 0 10px; /* Espaço depois do nome */
+  }
+}
+@media (max-width:500px) {
+  .title-confirmar{
+    font-size: 1.6rem;
   }
 }
 </style>

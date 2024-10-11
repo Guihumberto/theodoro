@@ -5,6 +5,7 @@
     <Imagens />
     <DiaHorario v-if="readConvidado.id"  />
     <Confirmar v-if="readConvidado.id" />
+    <Footer />
   </div>
 </template>
 
