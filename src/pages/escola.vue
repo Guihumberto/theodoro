@@ -1,5 +1,6 @@
 <template>
   <div class="wrapperContent">
+    <Seta />
     <HomeHeader />
     <Idade />
     <Imagensescola />
