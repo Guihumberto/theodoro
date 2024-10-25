@@ -1,5 +1,5 @@
 <template>
-  <div class="indicador"></div>
+  <!-- <div class="indicador"></div> -->
   <div class="content">
     <img class="img_star" width="100%" src="../../assets/stars_2.png">
     <div class="title">
@@ -7,7 +7,7 @@
       <img src="../../assets/bb8_2.png" />
       <img src="../../assets/nave_1.png" />
       <div class="star-wars-title">
-        <h1 class="convidado">{{ readConvidado.name_child }}</h1>
+        <h1 class="convidado texto-destacado">{{ readConvidado.name_child }}</h1>
         <h1>A força está Chamando você</h1>  
       </div>
     </div>
@@ -221,6 +221,14 @@
     animation-delay: 1s;
     translate: 0;
   }
+}
+
+.texto-destacado {
+  text-shadow: 
+    -1px -1px 0 #d7f707,  /* Contorno no canto superior esquerdo */
+     1px -1px 0 #d7f707,  /* Contorno no canto superior direito */
+    -1px  1px 0 #d7f707,  /* Contorno no canto inferior esquerdo */
+     1px  1px 0 #d7f707;  /* Contorno no canto inferior direito */
 }
 
 </style>

@@ -30,7 +30,7 @@
 }
 @media (max-width: 400px) {
     .footer{
-        margin-top: 7rem;
+        margin-top: 2rem;
     }
 }
 </style>

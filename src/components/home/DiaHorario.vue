@@ -34,48 +34,63 @@
   width: min(100%, 600px);
   position: relative;
 }
+@property --a{
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
 .location {
     position: relative;
-    background-color: #333;
+    // background: repeating-conic-gradient(from var(--a), #ff2770 0%, #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50%);
+    max-width: 400px;
+    max-height: 400px;
     padding: 15px;
     margin: 5px 10px;
     border-radius: 8px;
     color: #fff;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
-    border: 5px solid; /* Define a borda */
+    border: 5px solid red; /* Define a borda */
+    animation:animate 4s linear infinite;
+}
+@keyframes animate {
+  0%{
+    --a: 0deg;
+  }
+  100%{
+    --a: 360deg;
+  }
 }
 .location::before {
     content: '';
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 50%;
+    width: 100%;
+    height: 100%;
+    top: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 0 30px 15px rgba(255, 0, 0, 0.7); /* Luz vermelha do ponto */
+    // background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 0%, transparent 0%, transparent 40%, #45f3ff 50%);
     animation: rodar 5s linear infinite;
+    animation-delay: -2s;
 }
 @keyframes rodar {
             0% {
-                transform: translate(-50%, -50%) rotate(0deg);
+                // transform: translate(-50%, -50%) rotate(0deg);
                 box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.7); /* Luz azul no início */
             }
             25% {
-                transform: translate(-50%, -50%) rotate(90deg);
+                // transform: translate(-50%, -50%) rotate(90deg);
                 box-shadow: 0 0 25px 12px rgba(0, 0, 128, 0.7); /* Transição de azul para púrpura */
             }
             50% {
-                transform: translate(-50%, -50%) rotate(180deg);
+                // transform: translate(-50%, -50%) rotate(180deg);
                 box-shadow: 0 0 30px 15px rgba(255, 0, 0, 0.7); /* Luz vermelha intensa */
             }
             75% {
-                transform: translate(-50%, -50%) rotate(270deg);
+                // transform: translate(-50%, -50%) rotate(270deg);
                 box-shadow: 0 0 25px 12px rgba(128, 0, 0, 0.7); /* Transição de vermelho para púrpura */
             }
             100% {
-                transform: translate(-50%, -50%) rotate(360deg);
+                // transform: translate(-50%, -50%) rotate(360deg);
                 box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.7); /* Volta para azul */
             }
         }

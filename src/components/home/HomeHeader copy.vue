@@ -7,7 +7,7 @@
       <img src="../../assets/bb8_2.png" />
       <img src="../../assets/nave_1.png" />
       <div class="star-wars-title">
-        <h1 class="convidado">{{ readConvidado.name_child }}</h1>
+        <h1 class="convidado texto-destacado">{{ readConvidado.name_child }}</h1>
         <h1>A força está Chamando você</h1>  
       </div>
     </div>
@@ -200,5 +200,13 @@ img{
         transform: rotateX(20deg) translateZ(-500px);
         opacity: 0;
     }
+}
+.texto-destacado {
+  color: white; /* Define a cor do texto */
+  text-shadow: 
+    -1px -1px 0 #000,  /* Contorno no canto superior esquerdo */
+     1px -1px 0 #000,  /* Contorno no canto superior direito */
+    -1px  1px 0 #000,  /* Contorno no canto inferior esquerdo */
+     1px  1px 0 #000;  /* Contorno no canto inferior direito */
 }
 </style>

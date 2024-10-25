@@ -97,6 +97,9 @@
             <v-btn @click="type=1, dialog = true"  color="error">NÃO PODEREI IR</v-btn>
             <v-btn @click="type=2, dialog = true" color="success" class="ml-2">MISSÃO ACEITA</v-btn>
           </div>
+          <v-alert class="mt-5">
+            <p class="d-flex justify-center align-center"> <v-icon>mdi-exclamation-thick</v-icon>Confirmar até 04/11/2024.</p>
+          </v-alert>
         </v-form>
     </div>
     <div v-if="readConvidado.not_go" class="not_go">
