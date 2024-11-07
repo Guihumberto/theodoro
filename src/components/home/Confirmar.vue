@@ -5,7 +5,7 @@
     <div class="title" v-if="!readConvidado.confirm && !readConvidado.not_go">
         <div class="mb-5 mt-15 text-left w-100">
           <h1 class="line-height title-confirmar">Confirme a sua presença!</h1>
-          <v-row class="mt-2 justify-center">
+          <!-- <v-row class="mt-2 justify-center">
             <v-col cols="12" class=" name_convidado">
               <h3 class="text-h5 line-height name_convidado_h3">{{ readConvidado.name_parents }}</h3>
             </v-col>
@@ -84,10 +84,10 @@
                 </template>
                </v-text-field>
             </v-col>
-          </v-row>
+          </v-row> -->
         </div>
         <v-form class="formulario" @submit.prevent="confirmar()">
-          <v-textarea
+          <!-- <v-textarea
             label="Mensagem"
             variant="outlined"
             placeholder="Deixe uma mensagem para o Theodoro e família."
@@ -96,7 +96,7 @@
           <div class="d-flex justify-space-between">
             <v-btn @click="type=1, dialog = true"  color="error">NÃO PODEREI IR</v-btn>
             <v-btn @click="type=2, dialog = true" color="success" class="ml-2">MISSÃO ACEITA</v-btn>
-          </div>
+          </div> -->
           <v-alert class="mt-5">
             <p class="d-flex justify-center align-center"> <v-icon>mdi-exclamation-thick</v-icon>Confirmar até 04/11/2024.</p>
           </v-alert>
